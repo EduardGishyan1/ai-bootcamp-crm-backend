@@ -19,12 +19,27 @@ CREATE TABLE "public"."Lead" (
 -- CreateTable
 CREATE TABLE "public"."Message" (
     "id" TEXT NOT NULL,
-    "leadId" TEXT NOT NULL,
+    "leadId" TEXT,
     "type" TEXT NOT NULL,
     "payload" JSONB NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
     CONSTRAINT "Message_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "public"."FaqSession" (
+    "id" TEXT NOT NULL,
+    "question" TEXT NOT NULL,
+    "answer" TEXT NOT NULL,
+    "topic" TEXT,
+    "confidence" DOUBLE PRECISION NOT NULL,
+    "escalated" BOOLEAN NOT NULL DEFAULT false,
+    "summary" TEXT,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "FaqSession_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex
@@ -34,4 +49,4 @@ CREATE INDEX "Lead_email_idx" ON "public"."Lead"("email");
 CREATE INDEX "Message_leadId_idx" ON "public"."Message"("leadId");
 
 -- AddForeignKey
-ALTER TABLE "public"."Message" ADD CONSTRAINT "Message_leadId_fkey" FOREIGN KEY ("leadId") REFERENCES "public"."Lead"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "public"."Message" ADD CONSTRAINT "Message_leadId_fkey" FOREIGN KEY ("leadId") REFERENCES "public"."Lead"("id") ON DELETE SET NULL ON UPDATE CASCADE;

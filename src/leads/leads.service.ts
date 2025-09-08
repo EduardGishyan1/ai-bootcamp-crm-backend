@@ -80,17 +80,4 @@ export class LeadsService {
     this.assertTransition(lead.stage, [Stage.New]);
     return this.prisma.lead.update({ where: { id }, data: { stage: Stage.Ready } });
   }
-
-  async toScheduled(id: string, sched?: ScheduleInfo) {
-    const lead = await this.one(id);
-    this.assertTransition(lead.stage, [Stage.Ready]);
-
-    if (sched) {
-      await this.prisma.message.create({
-        data: { leadId: id, type: 'schedule', payload: sched },
-      });
-    }
-
-    return this.prisma.lead.update({ where: { id }, data: { stage: Stage.Scheduled } });
-  }
 }

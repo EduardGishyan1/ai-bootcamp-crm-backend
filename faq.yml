@@ -1,0 +1,100 @@
+# Bootcamp FAQ knowledge base
+# Each item has: topic, answer, aliases[]
+
+- topic: tuition
+  answer: Tuition is $X. We offer installment plans and scholarships subject to eligibility.
+  aliases:
+    - What is the tuition?
+    - How much does it cost?
+    - What is the price of the course?
+    - How much is payment?
+    - How much is this course?
+    - What’s the tuition fee?
+    - What’s the cost of enrollment?
+
+- topic: prerequisites
+  answer: Basic Python and comfort with high-school math are recommended. We provide prep materials if you need to catch up.
+  aliases:
+    - What are the prerequisites?
+    - Do I need coding experience?
+    - Do I need prior Python knowledge?
+    - What skills should I have before starting?
+    - Are there any requirements before applying?
+    - What knowledge do I need to participate?
+    - What background is required?
+
+- topic: job guarantee
+  answer: We do not offer a job guarantee. We provide career support, mock interviews, and referrals when possible.
+  aliases:
+    - Do you offer a job guarantee?
+    - Is there a placement guarantee?
+    - Do you guarantee jobs after graduation?
+    - Will I get a job after the bootcamp?
+
+- topic: schedule
+  answer: The full-time track lasts 12 weeks and the part-time track lasts 24 weeks. Live sessions follow cohort schedules, and recordings are provided.
+  aliases:
+    - How long is the program?
+    - What’s the program length?
+    - How many weeks is the bootcamp?
+    - What is the time commitment?
+    - What’s the schedule of classes?
+    - Are the live sessions recorded?
+    - Can I join from another time zone?
+    - What is the course duration?
+
+- topic: scholarships
+  answer: We offer a limited number of merit- and need-based scholarships. Details and eligibility are shared after you apply.
+  aliases:
+    - Do you offer scholarships?
+    - Are scholarships available?
+    - Can I get financial aid?
+    - Do you have grants or discounts?
+    - Is there financial support available?
+
+- topic: application
+  answer: The steps are submit the application form, receive confirmation, complete payment, and schedule onboarding.
+  aliases:
+    - How do I apply?
+    - What are the steps to apply?
+    - How to enroll in the bootcamp?
+    - How can I join?
+    - What is the application process?
+
+- topic: start dates
+  answer: New cohorts typically start every 1–2 months. Upcoming dates are shared after you apply; you’ll also receive them by email. (If you need the next start date now, contact admissions.)
+  aliases:
+    - When does the bootcamp start?
+    - When is the next cohort starting?
+    - When is the start date?
+    - When is the next start date?
+    - What are the upcoming start dates?
+    - and when bootcamp is starting?
+    - When does it begin?
+    - When do classes start?
+
+- topic: greeting
+  answer: Welcome! We're glad you're interested in our bootcamp. Feel free to ask about tuition, prerequisites, schedule, or anything else you’d like to know.
+  aliases:
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good afternoon
+    - good evening
+    - greetings
+    - how are you
+    - I want to know about the bootcamp
+    - I am interested in your program
+
+- topic: payment
+  answer: When your application is ready, you can pay with PayPal.
+  aliases:
+    - How can I pay for the bootcamp?
+    - What payment methods do you accept?
+    - How do I pay?
+    - Can I pay online?
+    - Do you take PayPal?
+    - Is PayPal accepted?
+    - Payment options
+    - Ways to pay for the bootcamp
